@@ -1,0 +1,28 @@
+[server]
+hostname=irc.freenode.net
+port=6667
+password=
+
+[user]
+nick=projectbot
+realname="Nerdery Project Bot"
+
+[channels]
+autojoin[]=#phpbot
+autopart[]=
+
+[modules]
+
+; trac
+trac.load=true
+;The following directive is optional -- in case the class doesn't match the standard
+;trac.class=Module_Trac
+trac.url="https://trac.example.com/trac/"
+trac.user=
+trac.password=
+
+; svn
+svn.load=true
+svn.url="http://svn.example.com/trunk"
+svn.username=
+svn.password=
