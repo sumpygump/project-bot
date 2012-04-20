@@ -556,9 +556,6 @@ class IrcServer
         if ($nick == $this->_selfNick) {
             // Set the self source so I can use it when sending messages
             $this->_selfSource = $message->source;
-        } else {
-            // Welcome the user to the channel
-            $this->sendMessage($target, "Welcome, " . $nick . ".");
         }
     }
 
